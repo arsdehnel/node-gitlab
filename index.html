@@ -1,0 +1,1060 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>gitlab</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.js" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">gitlab</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="globals.html">Globals</a>
+				</li>
+			</ul>
+			<h1> gitlab</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<p><a href="https://www.npmjs.com/package/gitlab"><img src="https://img.shields.io/npm/v/gitlab.svg" alt="npm @latest"></a>
+					<a href="https://www.npmjs.com/package/gitlab"><img src="https://img.shields.io/npm/dt/gitlab.svg" alt="npm downloads"></a>
+					<a href="https://david-dm.org/jdalrymple/node-gitlab"><img src="https://david-dm.org/jdalrymple/node-gitlab/status.svg" alt="dependencies Status"></a>
+					<a href="https://david-dm.org/jdalrymple/node-gitlab?type=dev"><img src="https://david-dm.org/jdalrymple/node-gitlab/dev-status.svg" alt="devDependencies Status"></a>
+					<a href="https://greenkeeper.io/"><img src="https://badges.greenkeeper.io/jdalrymple/node-gitlab.svg" alt="Greenkeeper badge"></a>
+					<a href="https://codeclimate.com/github/jdalrymple/node-gitlab"><img src="https://codeclimate.com/github/jdalrymple/node-gitlab/badges/gpa.svg" alt="Code Climate"></a>
+					<a href="https://travis-ci.org/jdalrymple/node-gitlab"><img src="https://img.shields.io/travis/jdalrymple/node-gitlab/master.svg" alt="Build Status"></a>
+					<a href="https://codecov.io/gh/jdalrymple/node-gitlab"><img src="https://img.shields.io/codecov/c/github/jdalrymple/node-gitlab/master.svg" alt="Coverage"></a>
+					<a href="https://github.com/semantic-release/semantic-release"><img src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg" alt="semantic-release"></a>
+					<a href="http://commitizen.github.io/cz-cli/"><img src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg" alt="Commitizen friendly"></a>
+					<a href="https://img.shields.io/badge/code%20style-prettier-ff69b4.svg"><img src="https://img.shields.io/badge/code%20style-prettier-ff69b4.svg" alt="Code Style: Prettier"></a>
+					<a href="https://packagephobia.now.sh/result?p=gitlab"><img src="https://packagephobia.now.sh/badge?p=gitlab" alt="Install Size"></a>
+				<a href="https://github.com/jdalrymple/node-gitlab/blob/master/LICENSE.md"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a></p>
+				<a href="#node-gitlab" id="node-gitlab" style="color: inherit; text-decoration: none;">
+					<h1>node-gitlab</h1>
+				</a>
+				<p>🤖 <a href="https://github.com/gitlabhq/gitlabhq">GitLab</a> API NodeJS library with full support of all the <a href="https://github.com/gitlabhq/gitlabhq/tree/master/doc/api">Gitlab API</a> services.</p>
+				<a href="#table-of-contents" id="table-of-contents" style="color: inherit; text-decoration: none;">
+					<h2>Table of Contents</h2>
+				</a>
+				<ul>
+					<li><a href="#install">Install</a></li>
+					<li><a href="#getting-started">Getting Started</a><ul>
+							<li><a href="#cli-support">CLI Support</a></li>
+						</ul>
+					</li>
+					<li><a href="#docs">Docs</a><ul>
+							<li><a href="#supported-apis">Supported APIs</a></li>
+							<li><a href="#bundle-imports">Bundle Imports</a></li>
+							<li><a href="#examples">Examples</a></li>
+							<li><a href="#pagination">Pagination</a></li>
+							<li><a href="#sudo">Sudo</a></li>
+							<li><a href="#custom-request-libraries">Custom Request Libraries</a></li>
+							<li><a href="#misc">Misc</a></li>
+						</ul>
+					</li>
+					<li><a href="#development">Development</a></li>
+					<li><a href="#testing">Testing</a></li>
+					<li><a href="#contributors">Contributors</a></li>
+					<li><a href="#licence">License</a></li>
+					<li><a href="#changelog">Changelog</a></li>
+				</ul>
+				<a href="#install" id="install" style="color: inherit; text-decoration: none;">
+					<h2>Install</h2>
+				</a>
+				<pre><code class="language-bash"><span class="hljs-comment"># Install from npm</span>
+npm install gitlab</code></pre>
+				<a href="#getting-started" id="getting-started" style="color: inherit; text-decoration: none;">
+					<h2>Getting Started</h2>
+				</a>
+				<p>Instantiate the library using a basic token created in your <a href="https://docs.gitlab.com/ce/user/profile/personal_access_tokens.html">Gitlab Profile</a></p>
+				<pre><code class="language-javascript"><span class="hljs-comment">// ES6 (&gt;=node 10.16.0 LTS)</span>
+<span class="hljs-keyword">import</span> { Gitlab } <span class="hljs-keyword">from</span> <span class="hljs-string">'gitlab'</span>; <span class="hljs-comment">// All Resources</span>
+<span class="hljs-keyword">import</span> { Projects } <span class="hljs-keyword">from</span> <span class="hljs-string">'gitlab'</span>; <span class="hljs-comment">// Just the Project Resource</span>
+<span class="hljs-comment">//...etc</span>
+
+<span class="hljs-comment">// ES5, assuming native or polyfilled Promise is available</span>
+<span class="hljs-keyword">const</span> { Gitlab } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'gitlab'</span>);</code></pre>
+				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> api = <span class="hljs-keyword">new</span> Gitlab({
+  <span class="hljs-attr">token</span>: <span class="hljs-string">'personaltoken'</span>,
+});</code></pre>
+				<p>Available instantiating options:</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Optional</th>
+							<th>Default</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td><code>host</code></td>
+							<td>Yes</td>
+							<td><code>https://gitlab.com</code></td>
+							<td>Gitlab Instance Host URL</td>
+						</tr>
+						<tr>
+							<td><code>token</code></td>
+							<td>No*</td>
+							<td>N/A</td>
+							<td>Personal Token. Required (one of the three tokens are required)</td>
+						</tr>
+						<tr>
+							<td><code>oauthToken</code></td>
+							<td>No*</td>
+							<td>N/A</td>
+							<td>OAuth Token. Required (one of the three tokens are required)</td>
+						</tr>
+						<tr>
+							<td><code>jobToken</code></td>
+							<td>No*</td>
+							<td>N/A</td>
+							<td>CI Job Token. Required (one of the three tokens are required)</td>
+						</tr>
+						<tr>
+							<td><code>rejectUnauthorized</code></td>
+							<td>Yes</td>
+							<td><code>false</code></td>
+							<td>Http Certificate setting</td>
+						</tr>
+						<tr>
+							<td><code>sudo</code></td>
+							<td>Yes</td>
+							<td><code>false</code></td>
+							<td>Sudo query parameter</td>
+						</tr>
+						<tr>
+							<td><code>version</code></td>
+							<td>Yes</td>
+							<td><code>v4</code></td>
+							<td>API Version ID</td>
+						</tr>
+						<tr>
+							<td><code>camelize</code></td>
+							<td>Yes</td>
+							<td><code>false</code></td>
+							<td>Response Key Camelize. Camelizes all response body keys</td>
+						</tr>
+						<tr>
+							<td><code>requester</code></td>
+							<td>Yes</td>
+							<td><a href="./src/infrastructure/KyRequester.ts">KyRequester.ts</a></td>
+							<td>Request Library Wrapper. Currently wraps Ky.</td>
+						</tr>
+						<tr>
+							<td><code>requestTimeout</code></td>
+							<td>Yes</td>
+							<td><code>300000</code></td>
+							<td>Request Library Timeout in ms</td>
+						</tr>
+				</tbody></table>
+				<a href="#cli-support" id="cli-support" style="color: inherit; text-decoration: none;">
+					<h3>CLI Support</h3>
+				</a>
+				<p>The CLI export functions in a similar manner, following the pattern:</p>
+				<pre><code class="language-bash">gitlab [service name] [method name] --arg1 --arg2 --arg3</code></pre>
+				<p>Where <code>service name</code> is any of the supported API names, <code>method name</code> is any of the supported commands on that API service (See source for exceptions, but generally all, show, remove, update) and <code>--arg1...--arg3</code> are any of the arguments you would normally supply to the function. The names of the args should match the names in the method headers <strong>EXCEPT</strong> all the optional arguments who&#39;s names should match what the GitLab API docs request.</p>
+				<p>There is one small exception with the instantiating arguments however, which must be supplied using a <code>gl</code> prefix. ie.</p>
+				<pre><code class="language-bash"><span class="hljs-comment"># To get all the projects</span>
+gitlab projects all --gl-token=<span class="hljs-string">"personaltoken"</span>
+
+<span class="hljs-comment"># To get a project with id = 2</span>
+gitlab projects show --gl-token=<span class="hljs-string">"personaltoken"</span> --projectId=2</code></pre>
+				<p>To reduce the annoyance of having to pass those configuration properties each time, it is also possible to pass the token and host information through environment variables in the form of <code>GITLAB_[option name]</code> ie:</p>
+				<pre><code class="language-bash">GITLAB_HOST=http://example.com
+GITLAB_TOKEN=personaltoken</code></pre>
+				<p>This could be set globally or using a <a href="https://github.com/motdotla/dotenv#readme">.env</a> file in the project folder.</p>
+				<a href="#docs" id="docs" style="color: inherit; text-decoration: none;">
+					<h2>Docs</h2>
+				</a>
+				<p>Although there are the <a href="https://github.com/gitlabhq/gitlabhq/tree/master/doc/api">official docs</a> for the API, there are some extra goodies offered by this package! After the 3.0.0 release, the next large project will be putting together proper documentation for these goodies [#39]! Stay tuned!!</p>
+				<a href="#supported-apis" id="supported-apis" style="color: inherit; text-decoration: none;">
+					<h3>Supported APIs</h3>
+				</a>
+				<p>The API&#39;s that are currently supported are:</p>
+				<pre><code><span class="hljs-comment">// General</span>
+ApplicationSettings
+BroadcastMessages
+Events
+FeatureFlags
+GeoNodes
+GitignoreTemplates
+GitLabCIYMLTemplates
+Keys
+Licence
+LicenceTemplates
+Lint
+Markdown
+Namespaces
+NotificationSettings
+PagesDomains
+<span class="hljs-keyword">Search</span>
+SidekiqMetrics
+Snippets
+SystemHooks
+<span class="hljs-keyword">Version</span>
+Wikis
+
+<span class="hljs-comment">// Groups</span>
+Groups
+GroupAccessRequests
+GroupBadges
+GroupCustomAttributes
+GroupIssueBoards
+GroupMembers
+GroupMilestones
+GroupProjects
+GroupVariables
+Epics
+EpicIssues
+EpicNotes
+EpicDiscussions
+
+<span class="hljs-comment">// Projects</span>
+Branches
+Commits
+CommitDiscussions
+ContainerRegistry
+DeployKeys
+Deployments
+Environments
+Issues
+IssueAwardEmojis
+IssueNotes
+IssueDiscussions
+Jobs
+Labels
+MergeRequests
+MergeRequestAwardEmojis
+MergeRequestDiscussions
+MergeRequestNotes
+Packages
+Pipelines
+PipelineSchedules
+PipelineScheduleVariables
+Projects
+ProjectAccessRequests
+ProjectBadges
+ProjectCustomAttributes
+ProjectImportExport
+ProjectIssueBoards
+ProjectHooks
+ProjectMembers
+ProjectMilestones
+ProjectSnippets
+ProjectSnippetNotes
+ProjectSnippetDiscussions
+ProjectSnippetAwardEmojis
+ProtectedBranches
+ProtectedTags
+ProjectVariables
+PushRules
+Releases
+ReleaseLinks
+Repositories
+RepositoryFiles
+Runners
+Services
+Tags
+Triggers
+
+<span class="hljs-comment">// Users</span>
+Users
+UserEmails
+UserImpersonationTokens
+UserKeys
+UserGPGKeys
+</code></pre>
+				<a href="#bundle-imports" id="bundle-imports" style="color: inherit; text-decoration: none;">
+					<h3>Bundle Imports</h3>
+				</a>
+				<p>It can be annoying to have to import all the API&#39;s pertaining to a specific resource. For example, the Projects resource is composed of many API&#39;s, Projects, Issues, Labels, MergeRequests, etc. For convenience, there is a Bundle export for importing and instantiating all these related API&#39;s at once.</p>
+				<pre><code class="language-javascript"><span class="hljs-keyword">import</span> { ProjectsBundle } <span class="hljs-keyword">from</span> <span class="hljs-string">'gitlab'</span>;
+
+<span class="hljs-keyword">const</span> services = <span class="hljs-keyword">new</span> ProjectsBundle({
+  <span class="hljs-attr">host</span>:   <span class="hljs-string">'http://example.com'</span>,
+  <span class="hljs-attr">token</span>: <span class="hljs-string">'personaltoken'</span>
+})
+
+services.Projects.all()
+services.MergeRequests.all()
+etc..
+</code></pre>
+				<p>Currently there are three Bundles:</p>
+				<ol>
+					<li>ProjectsBundle which includes:</li>
+				</ol>
+				<pre><code><span class="hljs-keyword">Branches
+</span><span class="hljs-symbol">Commits</span>
+<span class="hljs-symbol">CommitDiscussions</span>
+<span class="hljs-symbol">Deployments</span>
+<span class="hljs-symbol">DeployKeys</span>
+<span class="hljs-symbol">Environments</span>
+<span class="hljs-symbol">Issues</span>
+<span class="hljs-symbol">IssueNotes</span>
+<span class="hljs-symbol">IssueDiscussions</span>
+<span class="hljs-symbol">IssueAwardEmojis</span>
+<span class="hljs-symbol">Jobs</span>
+<span class="hljs-symbol">Labels</span>
+<span class="hljs-symbol">MergeRequests</span>
+<span class="hljs-symbol">MergeRequestAwardEmojis</span>
+<span class="hljs-symbol">MergeRequestDiscussions</span>
+<span class="hljs-symbol">MergeRequestNotes</span>
+<span class="hljs-symbol">Packages</span>
+<span class="hljs-symbol">Pipelines</span>
+<span class="hljs-symbol">PipelineSchedules</span>
+<span class="hljs-symbol">PipelineScheduleVariables</span>
+<span class="hljs-symbol">Projects</span>
+<span class="hljs-symbol">ProjectAccessRequests</span>
+<span class="hljs-symbol">ProjectBadges</span>
+<span class="hljs-symbol">ProjectCustomAttributes</span>
+<span class="hljs-symbol">ProjectImportExport</span>
+<span class="hljs-symbol">ProjectIssueBoards</span>
+<span class="hljs-symbol">ProjectHooks</span>
+<span class="hljs-symbol">ProjectMembers</span>
+<span class="hljs-symbol">ProjectMilestones</span>
+<span class="hljs-symbol">ProjectSnippets</span>
+<span class="hljs-symbol">ProjectSnippetNotes</span>
+<span class="hljs-symbol">ProjectSnippetDiscussions</span>
+<span class="hljs-symbol">ProjectSnippetAwardEmojis</span>
+<span class="hljs-symbol">ProtectedBranches</span>
+<span class="hljs-symbol">ProtectedTags</span>
+<span class="hljs-symbol">ProjectVariables</span>
+<span class="hljs-keyword">PushRules
+</span><span class="hljs-symbol">Repositories</span>
+<span class="hljs-symbol">RepositoryFiles</span>
+<span class="hljs-symbol">Runners</span>
+<span class="hljs-symbol">Services</span>
+<span class="hljs-symbol">Tags</span>
+<span class="hljs-symbol">Todos</span>
+<span class="hljs-symbol">Triggers</span></code></pre><ol start="2">
+					<li>UsersBundle which includes:</li>
+				</ol>
+				<pre><code><span class="hljs-built_in">Users,</span>
+<span class="hljs-built_in">UserCustomAttributes,</span>
+<span class="hljs-built_in">UserEmails,</span>
+<span class="hljs-built_in">UserImpersonationTokens,</span>
+<span class="hljs-built_in">UserKeys,</span>
+UserGPGKeys</code></pre><ol start="3">
+					<li>GroupsBundle which includes:</li>
+				</ol>
+				<pre><code><span class="hljs-attribute">Groups
+GroupAccessRequests
+GroupBadges
+GroupCustomAttributes
+GroupIssueBoards
+GroupMembers
+GroupMilestones
+GroupProjects
+GroupVariables
+Epics
+EpicIssues
+EpicNotes
+EpicDiscussions</span></code></pre>
+				<a href="#examples" id="examples" style="color: inherit; text-decoration: none;">
+					<h3>Examples</h3>
+				</a>
+				<p>Once you have your library instantiated, you can utilize many of the API&#39;s functionality:</p>
+				<p>Using the await/async method</p>
+				<pre><code class="language-javascript"><span class="hljs-keyword">import</span> { Gitlab } <span class="hljs-keyword">from</span> <span class="hljs-string">'gitlab'</span>;
+
+<span class="hljs-keyword">const</span> api = <span class="hljs-keyword">new</span> Gitlab({
+  <span class="hljs-attr">host</span>: <span class="hljs-string">'http://example.com'</span>,
+  <span class="hljs-attr">token</span>: <span class="hljs-string">'personaltoken'</span>,
+});
+
+<span class="hljs-comment">// Listing users</span>
+<span class="hljs-keyword">let</span> users = <span class="hljs-keyword">await</span> api.Users.all();
+
+<span class="hljs-comment">// Or using Promise-Then notation</span>
+api.Projects.all().then(<span class="hljs-function"><span class="hljs-params">projects</span> =&gt;</span> {
+  <span class="hljs-built_in">console</span>.log(projects);
+});</code></pre>
+				<p>General rule about all the function parameters:</p>
+				<ul>
+					<li>If its a required parameter, it is a named argument in the functions</li>
+					<li>If its an optional parameter, it is defined in a options object following the named arguments</li>
+				</ul>
+				<p>ie.</p>
+				<pre><code class="language-javascript"><span class="hljs-keyword">import</span> { Gitlab } <span class="hljs-keyword">from</span> <span class="hljs-string">'gitlab'</span>;
+
+<span class="hljs-keyword">const</span> api = <span class="hljs-keyword">new</span> Gitlab({
+  <span class="hljs-attr">host</span>: <span class="hljs-string">'http://example.com'</span>,
+  <span class="hljs-attr">token</span>: <span class="hljs-string">'personaltoken'</span>,
+});
+
+api.Projects.create(projectId, {
+  <span class="hljs-comment">//options defined in the Gitlab API documentation</span>
+});</code></pre>
+				<a href="#pagination" id="pagination" style="color: inherit; text-decoration: none;">
+					<h3>Pagination</h3>
+				</a>
+				<p>For any .all() function on a resource, it will return all the items from Gitlab. This can be troublesome if there are many items, as the request it self can take a while to be fulfilled. As such, a maxPages option can be passed to limit the scope of the all function.</p>
+				<pre><code class="language-javascript"><span class="hljs-keyword">import</span> { Gitlab } <span class="hljs-keyword">from</span> <span class="hljs-string">'gitlab'</span>;
+
+<span class="hljs-keyword">const</span> api = <span class="hljs-keyword">new</span> Gitlab({
+  <span class="hljs-attr">host</span>: <span class="hljs-string">'http://example.com'</span>,
+  <span class="hljs-attr">token</span>: <span class="hljs-string">'personaltoken'</span>,
+});
+
+<span class="hljs-keyword">let</span> projects = <span class="hljs-keyword">await</span> api.Projects.all({ <span class="hljs-attr">maxPages</span>: <span class="hljs-number">2</span> });</code></pre>
+				<p>You can also use this in conjunction to the perPage argument which would override the default of 30 per page set by Gitlab:</p>
+				<pre><code class="language-javascript"><span class="hljs-keyword">import</span> { Gitlab } <span class="hljs-keyword">from</span> <span class="hljs-string">'gitlab'</span>;
+
+<span class="hljs-keyword">const</span> api = <span class="hljs-keyword">new</span> Gitlab({
+  <span class="hljs-attr">host</span>: <span class="hljs-string">'http://example.com'</span>,
+  <span class="hljs-attr">token</span>: <span class="hljs-string">'personaltoken'</span>,
+});
+
+<span class="hljs-keyword">let</span> projects = <span class="hljs-keyword">await</span> api.Projects.all({ <span class="hljs-attr">maxPages</span>: <span class="hljs-number">2</span>, <span class="hljs-attr">perPage</span>: <span class="hljs-number">40</span> });</code></pre>
+				<p>Additionally, if you would like to get back the pagination information, to know how many total pages there are for example, pass the pagination option <code>showPagination</code> in addition to either the
+				<code>maxPages</code> or <code>page</code> properties.</p>
+				<pre><code class="language-javascript">...
+const { data, pagination } = <span class="hljs-keyword">await</span> api.Projects.all({
+  <span class="hljs-attr">perPage</span>:<span class="hljs-number">40</span>,
+  <span class="hljs-attr">maxPages</span>:<span class="hljs-number">2</span>,
+  <span class="hljs-attr">showPagination</span>: <span class="hljs-literal">true</span>
+});
+...</code></pre>
+				<p>This will result in a response in this format:</p>
+				<pre><code class="language-javascript">data: [
+...
+],
+<span class="hljs-attr">pagination</span>: {
+  <span class="hljs-attr">total</span>: <span class="hljs-number">20</span>,
+  <span class="hljs-attr">next</span>: <span class="hljs-number">4</span>,
+  <span class="hljs-attr">current</span>: <span class="hljs-number">2</span>,
+  <span class="hljs-attr">previous</span>: <span class="hljs-number">1</span>,
+  <span class="hljs-attr">perPage</span>: <span class="hljs-number">3</span>,
+  <span class="hljs-attr">totalPages</span>: <span class="hljs-number">3</span>,
+}</code></pre>
+				<blockquote>
+					<p>Note: supplying any pagination restrictions is call intensive. Some resources will require many requests which can put a significant load on the Gitlab Server. The general best practice would be setting the page request option to only return the first page if all results are not required.</p>
+				</blockquote>
+				<a href="#sudo" id="sudo" style="color: inherit; text-decoration: none;">
+					<h3>Sudo</h3>
+				</a>
+				<p>For private gitlab instances, administrators are able to impersonate users through the API. To do so, you have to set the &#39;Sudo&#39; header on the services you want to impersonate the user for.</p>
+				<p>For example, if you want to disable notifications for a specific user:</p>
+				<pre><code class="language-javascript"><span class="hljs-keyword">import</span> { NotificationSettings } <span class="hljs-keyword">from</span> <span class="hljs-string">'gitlab'</span>;
+
+<span class="hljs-keyword">const</span> service = <span class="hljs-keyword">new</span> NotificationSettings({
+  <span class="hljs-attr">host</span>:   <span class="hljs-string">'http://example.com'</span>,
+  <span class="hljs-attr">token</span>: <span class="hljs-string">'personaltoken'</span>
+  sudo: <span class="hljs-number">8</span> <span class="hljs-comment">// Can be the user ID or a username</span>
+});
+
+<span class="hljs-keyword">await</span> service.edit({
+  <span class="hljs-attr">level</span>: NotificationSettings.LEVELS.DISABLED
+})</code></pre>
+				<a href="#custom-request-libraries" id="custom-request-libraries" style="color: inherit; text-decoration: none;">
+					<h3>Custom Request Libraries</h3>
+				</a>
+				<p>There is another constructor parameter that allows the user to specify their own custom request library
+					as long as it has a similar API to ky. To specify the library, simply set the <code>requester</code> property when
+				instatiating a service:</p>
+				<p>An example can be seen in the <a href="./src/infrastructure/KyRequester.ts">KyRequester.ts</a> file</p>
+				<pre><code class="language-javascript"><span class="hljs-keyword">import</span> { Gitlab } <span class="hljs-keyword">from</span> <span class="hljs-string">'gitlab'</span>;
+<span class="hljs-keyword">import</span> YourCustomRequester <span class="hljs-keyword">from</span> <span class="hljs-string">'custom-requester'</span>;
+
+<span class="hljs-keyword">const</span> api = <span class="hljs-keyword">new</span> Gitlab({
+  <span class="hljs-attr">host</span>: <span class="hljs-string">'http://example.com'</span>,
+  <span class="hljs-attr">token</span>: <span class="hljs-string">'personaltoken'</span>,
+  <span class="hljs-attr">requester</span>: YourCustomRequester,
+});</code></pre>
+				<a href="#misc" id="misc" style="color: inherit; text-decoration: none;">
+					<h3>Misc</h3>
+				</a>
+				<a href="#handling-https-certificates" id="handling-https-certificates" style="color: inherit; text-decoration: none;">
+					<h4>Handling HTTPS certificates</h4>
+				</a>
+				<p>If your Gitlab server is running via HTTPS, the proper way to pass in your certificates is via a <code>NODE_EXTRA_CA_CERTS</code> environment key, like this:</p>
+				<pre><code class="language-js"><span class="hljs-string">"scripts"</span>: {
+    <span class="hljs-string">"start"</span>: <span class="hljs-string">"NODE_EXTRA_CA_CERTS=./secrets/3ShapeCA.pem node bot.js"</span>
+},</code></pre>
+				<blockquote>
+					<p><strong>NOTE</strong>: <em>Using <code>process.env.NODE_TLS_REJECT_UNAUTHORIZED = &#39;0&#39;</code> will not work with the <code>gitlab</code> library. The <code>rejectUnauthorized</code> key is the only way to allow insecure certificates to be bypassed.</em></p>
+				</blockquote>
+				<a href="#non-jsontext-responses" id="non-jsontext-responses" style="color: inherit; text-decoration: none;">
+					<h4>Non JSON/Text Responses</h4>
+				</a>
+				<p>For responses such as file data that may be returned from the API, the data is exposed as a buffer. For example when trying to write a file, this can be done like:</p>
+				<pre><code class="language-javascript">let bufferedData = await api.Jobs.downloadLatestArtifactFile(project.id, &quot;test&quot;, &quot;job_test);
+
+fs.writeFileSync(&quot;test.zip&quot;, bufferedData);
+</code></pre>
+				<a href="#development" id="development" style="color: inherit; text-decoration: none;">
+					<h2>Development</h2>
+				</a>
+				<p>To get this running locally rather than from your <code>node_modules</code> folder:</p>
+				<pre><code class="language-bash">$ git <span class="hljs-built_in">clone</span> https://github.com/jdalrymple/node-gitlab.git
+$ <span class="hljs-built_in">cd</span> node-gitlab
+$ npm install
+$ npm build</code></pre>
+				<p>And then inside whatever project you are using <code>node-gitlab</code> in you change your references to use that repo. In your package.json of that upstream project change:</p>
+				<pre><code class="language-json">&quot;dependencies&quot;: {
+  &quot;gitlab&quot;: &quot;5.0.0&quot;
+}</code></pre>
+				<p>to this</p>
+				<pre><code class="language-json">"dependencies": {
+  "gitlab": "&lt;path-to-your-clone&gt;"
+}</code></pre>
+				<a href="#testing" id="testing" style="color: inherit; text-decoration: none;">
+					<h2>Testing</h2>
+				</a>
+				<p>Testing is a work-in-progress right now but here is the start.</p>
+				<ol>
+					<li>First run Gitlab in a docker container:</li>
+				</ol>
+				<pre><code class="language-bash">docker-compose -f docker-compose.test.yml up</code></pre>
+				<ol>
+					<li>Once GitLab is up on localhost:8080, get the two environment variables from the docker image could
+					either export them into environment variables locally:</li>
+				</ol>
+				<pre><code class="language-bash"><span class="hljs-built_in">export</span> PERSONAL_ACCESS_TOKEN=$(docker <span class="hljs-built_in">exec</span> -it gitlab bash -lc <span class="hljs-string">'printf "%q" "${PERSONAL_ACCESS_TOKEN}"'</span>)
+<span class="hljs-built_in">export</span> GITLAB_URL=$(docker <span class="hljs-built_in">exec</span> -it gitlab bash -lc <span class="hljs-string">'printf "%q" "${GITLAB_URL}"'</span>)</code></pre>
+				<ol>
+					<li>Now run the tests</li>
+				</ol>
+				<pre><code class="language-bash">npm run <span class="hljs-built_in">test</span>
+
+<span class="hljs-comment"># or, alternatively</span>
+npm run <span class="hljs-built_in">test</span>-with-token <span class="hljs-comment"># sets PERSONAL_ACCESS_TOKEN and GITLAB_URL from above, before running tests</span></code></pre>
+				<p>You can also define them in front of the npm script</p>
+				<pre><code><span class="hljs-attribute">PERSONAL_ACCESS_TOKEN</span>=<span class="hljs-string">'abcdefg'</span> <span class="hljs-attribute">GITLAB_URL</span>=<span class="hljs-string">'http://localhost:8080'</span> npm <span class="hljs-builtin-name">run</span> test</code></pre><blockquote>
+					<p>Note it may take about 3 minutes to get the variables while Gitlab is starting up in the container</p>
+				</blockquote>
+				<a href="#contributors" id="contributors" style="color: inherit; text-decoration: none;">
+					<h2>Contributors</h2>
+				</a>
+				<p>This started off as a fork from <a href="https://github.com/node-gitlab/node-gitlab">node-gitlab</a> but I ended up rewriting much of the code. Here are the original work&#39;s <a href="https://github.com/node-gitlab/node-gitlab#contributors">contributors</a>.</p>
+				<ul>
+					<li><a href="https://github.com/ddesrosier">Dylan DesRosier</a></li>
+					<li><a href="https://github.com/mikew">Mike Wyatt</a></li>
+					<li><a href="https://github.com/coryzibell">Cory Zibeill</a></li>
+					<li><a href="https://github.com/shadygrove">Martin Bour</a></li>
+					<li><a href="https://github.com/christophlehmann">Christoph Lehmann</a></li>
+					<li><a href="https://github.com/FrankV01">Frank V</a></li>
+					<li><a href="https://github.com/Salimlou">Salim Benabbou</a></li>
+					<li><a href="https://github.com/tvtamas">Tamás Török-Vistai</a></li>
+					<li><a href="https://github.com/MartinBenninger">Martin Benninger</a></li>
+					<li><a href="https://github.com/arsdehnel">Adam Dehnel</a></li>
+					<li><a href="https://github.com/fewieden">fewieden</a></li>
+					<li><a href="https://github.com/comster">Jeff Pelton</a></li>
+					<li><a href="https://github.com/claude-abounegm">Claude Abounegm</a></li>
+					<li><a href="https://github.com/Marethyu1">Stefan Hall</a></li>
+					<li><a href="https://github.com/Mr-Wallet">Jordan Wallet</a></li>
+					<li><a href="https://github.com/EvHaus">Ev Haus</a></li>
+					<li><a href="https://github.com/zhao0">zhao0</a></li>
+					<li><a href="https://github.com/jgrosso">Joshua Grosso</a></li>
+					<li><a href="https://github.com/fboutin-pmc">Frédéric Boutin</a></li>
+					<li><a href="https://github.com/yonguelink">Isaac Ouellet Therrien</a></li>
+					<li><a href="https://github.com/pablobirukov">Pavel Birukov</a></li>
+					<li><a href="https://github.com/Sharma-Rajat">Sharma-Rajat</a></li>
+					<li><a href="https://github.com/casz">Joseph Petersen</a></li>
+					<li><a href="https://github.com/IKatsuba">Igor Katsuba</a></li>
+					<li><a href="https://github.com/giuseppeangri">Giuseppe Angri</a></li>
+					<li><a href="https://github.com/Continuities">Michael Townsend</a></li>
+					<li><a href="https://github.com/bodtx">bodtx</a></li>
+					<li><a href="https://github.com/arthot">Artem</a></li>
+					<li><a href="https://github.com/MunifTanjim">Munif Tanjim</a></li>
+					<li><a href="https://github.com/max-wittig">Max Wittig</a></li>
+					<li><a href="https://github.com/qkdreyer">Quentin Dreyer</a></li>
+					<li><a href="https://github.com/maclennann">Norm MacLennan</a></li>
+					<li><a href="https://github.com/jnovick">jnovick</a></li>
+					<li><a href="https://github.com/mozinator">Fabian Aussems</a></li>
+					<li><a href="https://github.com/jennparise">jennparise</a></li>
+					<li><a href="https://github.com/mimaidms">Michael Matzka</a></li>
+					<li><a href="https://github.com/CraigAllardyce">CraigAllardyce</a></li>
+					<li><a href="https://github.com/brunobastosg">Bruno Guimarães</a></li>
+					<li><a href="https://github.com/Musinux">Louis Cherel</a></li>
+					<li><a href="https://github.com/leipert">Lukas Eipert</a></li>
+					<li><a href="https://github.com/maximilian-krauss">Maximilian Krauß</a></li>
+					<li><a href="https://github.com/evolution-gaming">Evolution Gaming</a></li>
+					<li><a href="https://github.com/Neonox31">WEBER Logan</a></li>
+					<li><a href="https://github.com/MrCheater">Anton Zhukov</a></li>
+					<li><a href="https://github.com/beaverusiv">Nic Loomans</a></li>
+					<li><a href="">Jennifer Everhart</a></li>
+					<li><a href="https://github.com/icedream">Carl Kittelberger</a></li>
+					<li><a href="https://github.com/Vrtak-CZ">Patrik Votoček</a></li>
+					<li><a href="https://github.com/Kyr">Kyrylo Fedorov</a></li>
+					<li><a href="https://github.com/jdalrymple/LRH539">Claudio Vellage</a></li>
+					<li><a href="https://github.com/seb0uil">Seb0uil</a></li>
+				</ul>
+				<a href="#license" id="license" style="color: inherit; text-decoration: none;">
+					<h2>License</h2>
+				</a>
+				<p><a href="https://github.com/jdalrymple/node-gitlab/blob/master/LICENSE.md">MIT</a></p>
+				<a href="#changelog" id="changelog" style="color: inherit; text-decoration: none;">
+					<h2>Changelog</h2>
+				</a>
+				<p><a href="https://github.com/jdalrymple/node-gitlab/blob/master/CHANGELOG.md">Here</a></p>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="globals.html"><em>Globals</em></a>
+					</li>
+					<li class="label tsd-is-external">
+						<span>Internals</span>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_bin_generate_.html">"src/bin/generate"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_bin_index_.html">"src/bin/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_index_.html">"src/core/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_infrastructure_baseservice_.html">"src/core/infrastructure/<wbr>Base<wbr>Service"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_infrastructure_kyrequester_.html">"src/core/infrastructure/<wbr>KyRequester"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_infrastructure_requesthelper_.html">"src/core/infrastructure/<wbr>Request<wbr>Helper"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_infrastructure_utils_.html">"src/core/infrastructure/<wbr>Utils"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_infrastructure_index_.html">"src/core/infrastructure/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_applicationsettings_.html">"src/core/services/<wbr>Application<wbr>Settings"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_branches_.html">"src/core/services/<wbr>Branches"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_broadcastmessages_.html">"src/core/services/<wbr>Broadcast<wbr>Messages"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_commitdiscussions_.html">"src/core/services/<wbr>Commit<wbr>Discussions"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_commits_.html">"src/core/services/<wbr>Commits"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_containerregistry_.html">"src/core/services/<wbr>Container<wbr>Registry"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_deploykeys_.html">"src/core/services/<wbr>Deploy<wbr>Keys"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_deployments_.html">"src/core/services/<wbr>Deployments"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_environments_.html">"src/core/services/<wbr>Environments"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_epicdiscussions_.html">"src/core/services/<wbr>Epic<wbr>Discussions"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_epicissues_.html">"src/core/services/<wbr>Epic<wbr>Issues"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_epicnotes_.html">"src/core/services/<wbr>Epic<wbr>Notes"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_epics_.html">"src/core/services/<wbr>Epics"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_events_.html">"src/core/services/<wbr>Events"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_featureflags_.html">"src/core/services/<wbr>Feature<wbr>Flags"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_geonodes_.html">"src/core/services/<wbr>Geo<wbr>Nodes"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_gitlabciymltemplates_.html">"src/core/services/<wbr>Git<wbr>LabCIYMLTemplates"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_gitignoretemplates_.html">"src/core/services/<wbr>Gitignore<wbr>Templates"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_groupaccessrequests_.html">"src/core/services/<wbr>Group<wbr>Access<wbr>Requests"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_groupbadges_.html">"src/core/services/<wbr>Group<wbr>Badges"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_groupcustomattributes_.html">"src/core/services/<wbr>Group<wbr>Custom<wbr>Attributes"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_groupissueboards_.html">"src/core/services/<wbr>Group<wbr>Issue<wbr>Boards"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_groupmembers_.html">"src/core/services/<wbr>Group<wbr>Members"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_groupmilestones_.html">"src/core/services/<wbr>Group<wbr>Milestones"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_groupprojects_.html">"src/core/services/<wbr>Group<wbr>Projects"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_groupvariables_.html">"src/core/services/<wbr>Group<wbr>Variables"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_groups_.html">"src/core/services/<wbr>Groups"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_issueawardemojis_.html">"src/core/services/<wbr>Issue<wbr>Award<wbr>Emojis"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_issuediscussions_.html">"src/core/services/<wbr>Issue<wbr>Discussions"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_issuenotes_.html">"src/core/services/<wbr>Issue<wbr>Notes"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_issues_.html">"src/core/services/<wbr>Issues"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_jobs_.html">"src/core/services/<wbr>Jobs"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_keys_.html">"src/core/services/<wbr>Keys"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_labels_.html">"src/core/services/<wbr>Labels"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_licence_.html">"src/core/services/<wbr>Licence"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_licencetemplates_.html">"src/core/services/<wbr>Licence<wbr>Templates"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_lint_.html">"src/core/services/<wbr>Lint"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_markdown_.html">"src/core/services/<wbr>Markdown"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_mergerequestawardemojis_.html">"src/core/services/<wbr>Merge<wbr>Request<wbr>Award<wbr>Emojis"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_mergerequestdiscussions_.html">"src/core/services/<wbr>Merge<wbr>Request<wbr>Discussions"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_mergerequestnotes_.html">"src/core/services/<wbr>Merge<wbr>Request<wbr>Notes"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_mergerequests_.html">"src/core/services/<wbr>Merge<wbr>Requests"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_namespaces_.html">"src/core/services/<wbr>Namespaces"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_notificationsettings_.html">"src/core/services/<wbr>Notification<wbr>Settings"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_packages_.html">"src/core/services/<wbr>Packages"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_pagesdomains_.html">"src/core/services/<wbr>Pages<wbr>Domains"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_pipelineschedulevariables_.html">"src/core/services/<wbr>Pipeline<wbr>Schedule<wbr>Variables"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_pipelineschedules_.html">"src/core/services/<wbr>Pipeline<wbr>Schedules"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_pipelines_.html">"src/core/services/<wbr>Pipelines"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_projectaccessrequests_.html">"src/core/services/<wbr>Project<wbr>Access<wbr>Requests"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_projectbadges_.html">"src/core/services/<wbr>Project<wbr>Badges"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_projectcustomattributes_.html">"src/core/services/<wbr>Project<wbr>Custom<wbr>Attributes"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_projecthooks_.html">"src/core/services/<wbr>Project<wbr>Hooks"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_projectimportexport_.html">"src/core/services/<wbr>Project<wbr>Import<wbr>Export"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_projectissueboards_.html">"src/core/services/<wbr>Project<wbr>Issue<wbr>Boards"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_projectmembers_.html">"src/core/services/<wbr>Project<wbr>Members"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_projectmilestones_.html">"src/core/services/<wbr>Project<wbr>Milestones"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_projectsnippetawardemojis_.html">"src/core/services/<wbr>Project<wbr>Snippet<wbr>Award<wbr>Emojis"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_projectsnippetdiscussions_.html">"src/core/services/<wbr>Project<wbr>Snippet<wbr>Discussions"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_projectsnippetnotes_.html">"src/core/services/<wbr>Project<wbr>Snippet<wbr>Notes"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_projectsnippets_.html">"src/core/services/<wbr>Project<wbr>Snippets"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_projectvariables_.html">"src/core/services/<wbr>Project<wbr>Variables"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_projects_.html">"src/core/services/<wbr>Projects"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_protectedbranches_.html">"src/core/services/<wbr>Protected<wbr>Branches"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_protectedtags_.html">"src/core/services/<wbr>Protected<wbr>Tags"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_pushrules_.html">"src/core/services/<wbr>Push<wbr>Rules"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_releaselinks_.html">"src/core/services/<wbr>Release<wbr>Links"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_releases_.html">"src/core/services/<wbr>Releases"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_repositories_.html">"src/core/services/<wbr>Repositories"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_repositoryfiles_.html">"src/core/services/<wbr>Repository<wbr>Files"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_runners_.html">"src/core/services/<wbr>Runners"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_search_.html">"src/core/services/<wbr>Search"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_services_.html">"src/core/services/<wbr>Services"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_sidekiqmetrics_.html">"src/core/services/<wbr>Sidekiq<wbr>Metrics"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_snippets_.html">"src/core/services/<wbr>Snippets"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_systemhooks_.html">"src/core/services/<wbr>System<wbr>Hooks"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_tags_.html">"src/core/services/<wbr>Tags"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_todos_.html">"src/core/services/<wbr>Todos"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_triggers_.html">"src/core/services/<wbr>Triggers"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_usercustomattributes_.html">"src/core/services/<wbr>User<wbr>Custom<wbr>Attributes"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_useremails_.html">"src/core/services/<wbr>User<wbr>Emails"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_usergpgkeys_.html">"src/core/services/<wbr>UserGPGKeys"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_userimpersonationtokens_.html">"src/core/services/<wbr>User<wbr>Impersonation<wbr>Tokens"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_userkeys_.html">"src/core/services/<wbr>User<wbr>Keys"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_users_.html">"src/core/services/<wbr>Users"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_version_.html">"src/core/services/<wbr>Version"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_wikis_.html">"src/core/services/<wbr>Wikis"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_services_index_.html">"src/core/services/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_templates_resourceaccessrequests_.html">"src/core/templates/<wbr>Resource<wbr>Access<wbr>Requests"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_templates_resourceawardemojis_.html">"src/core/templates/<wbr>Resource<wbr>Award<wbr>Emojis"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_templates_resourcebadges_.html">"src/core/templates/<wbr>Resource<wbr>Badges"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_templates_resourcecustomattributes_.html">"src/core/templates/<wbr>Resource<wbr>Custom<wbr>Attributes"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_templates_resourcediscussions_.html">"src/core/templates/<wbr>Resource<wbr>Discussions"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_templates_resourceissueboards_.html">"src/core/templates/<wbr>Resource<wbr>Issue<wbr>Boards"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_templates_resourcemembers_.html">"src/core/templates/<wbr>Resource<wbr>Members"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_templates_resourcemilestones_.html">"src/core/templates/<wbr>Resource<wbr>Milestones"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_templates_resourcenotes_.html">"src/core/templates/<wbr>Resource<wbr>Notes"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_templates_resourcetemplates_.html">"src/core/templates/<wbr>Resource<wbr>Templates"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_templates_resourcevariables_.html">"src/core/templates/<wbr>Resource<wbr>Variables"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_core_templates_index_.html">"src/core/templates/index"</a>
+					</li>
+					<li class="label tsd-is-external">
+						<span>Externals</span>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="modules/_dist_map_.html">"dist/map"</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="modules/_package_.html">"package"</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
