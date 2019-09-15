@@ -25,6 +25,7 @@
     "ky-universal": "^0.3.0",
     "li": "^1.3.0",
     "query-string": "^6.8.3",
+    "typedoc": "^0.15.0",
     "universal-url": "^2.0.0",
     "yargs": "^14.0.0"
   },
@@ -99,7 +100,8 @@
     "prepublishOnly": "npm run build",
     "release": "semantic-release",
     "test:integration": "jest test/integration -c=jest.config.json --detectOpenHandles",
-    "test:unit": "jest test/unit --debug -c=jest.config.json"
+    "test:unit": "jest test/unit --debug -c=jest.config.json",
+    "docs": "typedoc --out docs src"
   },
   "type": "module",
   "types": "dist/index.d.ts"
